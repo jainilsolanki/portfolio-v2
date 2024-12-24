@@ -1,0 +1,68 @@
+.preloader {
+  position: fixed;
+  bottom: 20px; /* Positioned bottom-right */
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  height: auto;
+  width: auto;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bar {
+  width: 5px; /* Slim bar */
+  height: 20px; /* Taller bar */
+  border-radius: 2px;
+  transform-origin: bottom; /* Animate from bottom */
+}
+
+.loaderText {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.introduction {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10000000000000000;
+  background-color: #020617;
+  svg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 300px);
+    path {
+      fill: #020617;
+    }
+  }
+  p {
+    display: flex;
+    color: white;
+    font-size: 42px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+}
