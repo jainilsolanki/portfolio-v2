@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 export default function HeroSection() {
   const blobGradientVariants:any = {
@@ -18,6 +18,7 @@ export default function HeroSection() {
         repeat: Infinity,
         repeatType: "loop",
         ease: "easeInOut",
+        delay: 2,
       },
     },
   };
