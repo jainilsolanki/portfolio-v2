@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
-  const gradientVariants:any = {
+  const blobGradientVariants:any = {
     animate: {
       background: [
-        "linear-gradient(45deg, #f0f4f8, #dfe7f0)", // Soft pastel gradient
-        "linear-gradient(45deg, #f7e9e4, #f3d7b1)", // Soft warm tones
-        "linear-gradient(45deg, #cfd9e6, #e0e7ff)", // Subtle blue to light purple
-        "linear-gradient(45deg, #f3f4f9, #dfe2f0)", // Soft blue-gray
+        "linear-gradient(45deg, rgba(244, 244, 246, 1) 20%, rgba(220, 220, 240, 1) 100%)", // Soft pastel pink-to-blue
+        "linear-gradient(45deg, rgba(255, 220, 225, 1) 20%, rgba(150, 200, 255, 1) 100%)", // Warm pink-to-blue
+        "linear-gradient(45deg, rgba(230, 240, 250, 1) 30%, rgba(150, 170, 220, 1) 70%)", // Light blue-to-gray
+        "linear-gradient(45deg, rgba(250, 250, 250, 1) 30%, rgba(100, 180, 230, 1) 70%)", // Cool light gradient
+        "linear-gradient(45deg, rgba(250, 250, 250, 1) 30%, rgba(100, 180, 230, 1) 70%)", // Reversing the cool light gradient
+        "linear-gradient(45deg, rgba(230, 240, 250, 1) 30%, rgba(150, 170, 220, 1) 70%)", // Reversing light blue-to-gray
+        "linear-gradient(45deg, rgba(255, 220, 225, 1) 20%, rgba(150, 200, 255, 1) 100%)", // Reversing warm pink-to-blue
+        "linear-gradient(45deg, rgba(244, 244, 246, 1) 20%, rgba(220, 220, 240, 1) 100%)", // Reversing soft pastel pink-to-blue
       ],
       transition: {
-        duration: 10, // Slower transition for subtle effect
+        duration: 6,
         repeat: Infinity,
         repeatType: "loop",
         ease: "easeInOut",
@@ -29,10 +33,10 @@ export default function HeroSection() {
 
   return (
     <div className="relative flex flex-col items-center justify-center h-screen overflow-hidden">
-      {/* Subtle Animated Gradient */}
+      {/* Blob Gradient Background */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full"
-        variants={gradientVariants}
+        variants={blobGradientVariants}
         animate="animate"
       />
       
