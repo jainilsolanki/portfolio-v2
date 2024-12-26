@@ -148,8 +148,20 @@ export default function Preloader() {
   return (
     <motion.div
       variants={slideUp}
-      initial="initial"
+      initial={{
+        borderRadius: "0",
+        boxShadow: "0px",
+      }}
+      animate={{
+        borderRadius: isComplete ? "0px" : "0 0 60px 60px",
+        boxShadow: isComplete ? "0px" : "0px 10px 20px rgba(0, 0, 0, 0.1)",
+      }}
       exit="exit"
+      transition={{
+        duration: 1, // Adjust for smoothness
+        ease: "easeInOut",
+        delay: 5,
+      }}
       className="h-screen w-screen flex items-center justify-center fixed z-[10000000000000000] overflow-hidden bg-white"
     >
       <WaveForm
