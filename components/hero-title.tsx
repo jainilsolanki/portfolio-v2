@@ -18,7 +18,7 @@ export default function HeroSection() {
         repeat: Infinity,
         repeatType: "loop",
         ease: "easeInOut",
-        delay: 2,
+        delay: 4,
       },
     },
   };
