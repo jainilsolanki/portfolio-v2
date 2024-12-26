@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 import Preloader from "@/components/preloader";
+import HeroSection from "@/components/hero-title";
 const sacramento = Sacramento({
   variable: "--font-sacramento",
   subsets: ["latin"],
@@ -45,7 +46,7 @@ export default function Home() {
       {/* <Header /> */}
       {!isLoading && (
         <div>
-          Jainil Solanki Temp Text
+          <HeroSection />
           {/* <Lamp />
           <About />
           <Skills />
