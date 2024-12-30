@@ -18,7 +18,7 @@ const alice = Alice({
 });
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     const lenis = new Lenis();
 

@@ -33,7 +33,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center h-screen overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center h-screen overflow-hidden z-0">
       {/* Blob Gradient Background */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full"
