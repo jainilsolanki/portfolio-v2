@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 import Preloader from "@/components/preloader";
 import HeroSection from "@/components/hero-title";
+import Header from "@/components/header";
 const sacramento = Sacramento({
   variable: "--font-sacramento",
   subsets: ["latin"],
@@ -43,7 +44,7 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      {/* <Header /> */}
+      <Header />
       {!isLoading && (
         <div>
           <HeroSection />

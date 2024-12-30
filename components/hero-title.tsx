@@ -48,7 +48,7 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          {"Janmey Solanki".split("").map((char, i) => (
+          {"Jainil Solanki".split("").map((char, i) => (
             <motion.span key={i} custom={i} variants={textVariants}>
               {char === " " ? "\u00A0" : char}
             </motion.span>
