@@ -21,7 +21,7 @@ export default function index() {
               <motion.div
                 href={href}
                 custom={i}
-                variants={waveEffect}
+                variants={blurSlide}
                 initial="initial"
                 animate="enter"
                 exit="exit"
