@@ -5,8 +5,6 @@ import Lenis from "lenis";
 import Preloader from "@/components/preloader";
 import HeroSection from "@/components/hero-title";
 import Header from "@/components/header";
-import WaveGradient from "@/components/hero-title2";
-import DynamicRippleFlow from "@/components/hero-title3";
 
 const sacramento = Sacramento({
   variable: "--font-sacramento",
@@ -51,8 +49,6 @@ export default function Home() {
       {!isLoading && (
         <div>
           <HeroSection />
-          <WaveGradient/>
-          <DynamicRippleFlow/>
           {/* <Lamp />
           <About />
           <Skills />
