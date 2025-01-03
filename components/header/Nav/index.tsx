@@ -19,6 +19,7 @@ export default function index() {
           return (
             <div key={`b_${i}`} className={styles.linkContainer}>
               <motion.div
+                // @ts-ignore
                 href={href}
                 custom={i}
                 variants={bubbleFloat}
