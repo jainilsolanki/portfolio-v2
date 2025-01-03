@@ -4,11 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 import Preloader from "@/components/preloader";
 import HeroSection from "@/components/hero-title";
-import Header1 from "@/components/header1";
-import Header2 from "@/components/header2";
-import Header3 from "@/components/header3";
-import Header4 from "@/components/header4";
-import Header5 from "@/components/header5";
+import Header from "@/components/header";
 const sacramento = Sacramento({
   variable: "--font-sacramento",
   subsets: ["latin"],
@@ -22,7 +18,7 @@ const alice = Alice({
 });
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -48,13 +44,7 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <div>
-        <Header1 />
-        <Header2 />
-        <Header3 />
-        <Header4 />
-        <Header5 />
-      </div>
+      <Header />
       {!isLoading && (
         <div>
           <HeroSection />

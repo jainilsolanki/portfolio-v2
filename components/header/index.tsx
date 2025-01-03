@@ -22,7 +22,7 @@ const menu = {
     }
 }
 
-export default function Header1() {
+export default function Index() {
     const [isActive, setIsActive] = useState(false);
 
     return (
