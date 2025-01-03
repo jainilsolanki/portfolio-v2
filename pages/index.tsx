@@ -5,6 +5,7 @@ import Lenis from "lenis";
 import Preloader from "@/components/preloader";
 import HeroSection from "@/components/hero-title";
 import Header from "@/components/header";
+import WaveGradient from "@/components/hero-title2";
 const sacramento = Sacramento({
   variable: "--font-sacramento",
   subsets: ["latin"],
@@ -47,7 +48,8 @@ export default function Home() {
       <Header />
       {!isLoading && (
         <div>
-          <HeroSection />
+          {/* <HeroSection /> */}
+          <WaveGradient/>
           {/* <Lamp />
           <About />
           <Skills />
