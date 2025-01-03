@@ -21,7 +21,7 @@ const DynamicRippleFlow = () => {
             120deg,
             rgba(200, 220, 240, 0.7),  /* Soft light blue */
             rgba(180, 160, 220, 0.7),  /* Muted lavender */
-            rgba(240, 200, 255, 0.7),  /* Subtle pastel pink */
+            rgba(200, 200, 255, 0.7),  /* Subtle pastel pink */
             rgba(180, 210, 255, 0.7)   /* Soft blue */
           )`,
           backgroundSize: "300% 300%",

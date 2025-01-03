@@ -7,6 +7,7 @@ import HeroSection from "@/components/hero-title";
 import Header from "@/components/header";
 import WaveGradient from "@/components/hero-title2";
 import DynamicRippleFlow from "@/components/hero-title3";
+
 const sacramento = Sacramento({
   variable: "--font-sacramento",
   subsets: ["latin"],
@@ -50,7 +51,7 @@ export default function Home() {
       {!isLoading && (
         <div>
           <HeroSection />
-          <WaveGradient/> 
+          <WaveGradient/>
           <DynamicRippleFlow/>
           {/* <Lamp />
           <About />
