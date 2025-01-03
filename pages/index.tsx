@@ -6,6 +6,7 @@ import Preloader from "@/components/preloader";
 import HeroSection from "@/components/hero-title";
 import Header from "@/components/header";
 import WaveGradient from "@/components/hero-title2";
+import DynamicRippleFlow from "@/components/hero-title3";
 const sacramento = Sacramento({
   variable: "--font-sacramento",
   subsets: ["latin"],
@@ -19,7 +20,7 @@ const alice = Alice({
 });
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -48,8 +49,9 @@ export default function Home() {
       <Header />
       {!isLoading && (
         <div>
-          {/* <HeroSection /> */}
-          <WaveGradient/>
+          <HeroSection />
+          <WaveGradient/> 
+          <DynamicRippleFlow/>
           {/* <Lamp />
           <About />
           <Skills />
